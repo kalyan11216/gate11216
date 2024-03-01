@@ -81,37 +81,42 @@ X(\omega) =
 \begin{center}
     \begin{tikzpicture}[scale=0.6, ultra thick]
         \draw[->] (0,-2) -- (0,5);
-        \draw (0,5.5) node {X($\omega$)};
+        \draw (0,5.5) node {$X(f_{0}$)};
         \draw (0.5,-0.5)  node{0};
         \draw[<->]  (-5,0) -- (5,0);
         \draw  (3,3) -- (3,0);
         \draw (0.3,3.4) node{1};
         \draw (-3,3) -- (3,3);
         \draw (-3,3)--(-3,0);
-        \draw (-3,-0.5) node {$-\omega_0$};
-        \draw (3,-0.5) node {$\omega_0$};
+        \draw (-3,-0.5) node {$-2\pi f_{0}$};
+
+        \draw (3,-0.5) node {$2\pi f_{0}$};
     \end{tikzpicture}
 \end{center}
 
 By taking inverse Fourier transform,
 \begin{align}
-x\brak{t} = \frac{\sin\brak{\omega_0 t}}{\pi t}
+x\brak{t} = \frac{\sin\brak{ t}}{\pi t}
 \end{align}
 
 \begin{align}
-& x\left(\frac{\pi}{2 \omega_0}\right) =\frac{2 \omega_0}{\pi^2}
+& x\left(\frac{\pi}{2\brak{2\pi f_{0}}}\right) =\frac{2 \brak{2\pi f_{0}}}{\pi^2}
 \end{align}
 
 So, option \brak{C} and \brak{D} are wrong.
 
 \begin{align}
-x\brak{0}=\lim_{t\to 0}\frac{\sin \omega_0 t}{\pi t}=\frac{\omega_0}{\pi}
+x\brak{0}=\lim_{t\to 0}\frac{\sin \brak{2\pi f_{0}} t}{\pi t}=\frac{2\pi f_{0}}{\pi}
 \end{align}
 
-So, $x\brak{0} \propto \omega_0 \Rightarrow$ Option \brak{B} is wrong.\\
+So, $x\brak{0} \propto f_{0} \Rightarrow$ Option \brak{B} is wrong.\\
 
-When $\omega \rightarrow \infty$, $X\brak{\omega}$ will be a D.C signal and inverse Fourier transform of a D.C signal will be impulse signal\\[3ex]
+When $f_{0}\rightarrow \infty$, $X\brak{f_{0}}$ will be a D.C signal and inverse Fourier transform of a D.C signal will be impulse signal\\[3ex]
 So, option \brak{A} is correct
-
-
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\columnwidth]{figs/main.png}
+    \caption{plot of X\brak{t}}
+    \label{fig:enter-label}
+\end{figure}
 \end{document}
